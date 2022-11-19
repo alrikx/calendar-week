@@ -27,6 +27,8 @@ class CalendarWeekSensor(SensorEntity):
     _attr_name = "Calendar Week"
     _attr_native_unit_of_measurement = TIME_WEEKS
     _attr_state_class = SensorStateClass.MEASUREMENT
+    _attr_unique_id = "calendar_week"
+    _attr_icon = "mdi:calendar-week"
 
     def update(self) -> None:
         """Fetch new state data for the sensor.
