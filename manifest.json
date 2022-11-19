@@ -1,0 +1,12 @@
+{
+    "domain": "calendar-week",
+    "name": "Calendar Week",
+    "documentation": "https://github.com/alrikx/calendar-week",
+    "dependencies": [],
+    "codeowners": [
+      "@alrikx"
+    ],
+    "requirements": [],
+    "iot_class": "local_polling",
+    "version": "0.1.0"
+  }
