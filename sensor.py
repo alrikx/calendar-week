@@ -6,7 +6,7 @@ from homeassistant.components.sensor import (
     SensorEntity,
     SensorStateClass,
 )
-from homeassistant.const import TIME_WEEKS
+from homeassistant.const import WEEKS
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.typing import ConfigType, DiscoveryInfoType
@@ -25,7 +25,7 @@ class CalendarWeekSensor(SensorEntity):
     """Representation of a Sensor."""
 
     _attr_name = "Calendar Week"
-    _attr_native_unit_of_measurement = TIME_WEEKS
+    _attr_native_unit_of_measurement = WEEKS
     _attr_state_class = SensorStateClass.MEASUREMENT
     _attr_unique_id = "calendar_week"
     _attr_icon = "mdi:calendar-week"
